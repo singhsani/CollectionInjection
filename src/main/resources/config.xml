@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean name="stu" class="org.example.Student">
+        <property name="name" value="Shayam"/>
+        <property name="address">
+            <list>
+                <value>India</value>
+                <value>USA</value>
+                <value>Nepal</value>
+            </list>
+        </property>
+        <property name="phone">
+            <set>
+                <value>9999999999</value>
+                <value>9099090999</value>
+            </set>
+        </property>
+        <property name="course">
+            <map>
+                <entry key="Java" value="2 month"/>
+                <entry key="C++" value=" 1 month"/>
+                <entry key="python" value="3 month"/>
+            </map>
+        </property>
+    </bean>
+</beans>
